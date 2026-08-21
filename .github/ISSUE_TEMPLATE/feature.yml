@@ -1,0 +1,32 @@
+name: Feature request
+description: Propose a focused improvement
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the user or measurement problem, not only the proposed implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Explain the smallest useful change.
+    validations:
+      required: true
+  - type: textarea
+    id: methodology
+    attributes:
+      label: Measurement impact
+      description: Explain which methodology constraints are affected, or state that none are affected.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: List simpler options that were considered.

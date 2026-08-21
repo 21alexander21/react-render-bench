@@ -1,0 +1,22 @@
+{
+  "name": "react-render-bench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.22.0",
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": ">=11.22.0"
+  },
+  "scripts": {
+    "check": "biome check . && tsc --project tsconfig.json",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint .",
+    "typecheck": "tsc --project tsconfig.json"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.9",
+    "typescript": "7.0.2"
+  }
+}

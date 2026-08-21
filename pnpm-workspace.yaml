@@ -1,0 +1,11 @@
+packages:
+  - apps/*
+  - packages/*
+
+catalog:
+  typescript: 7.0.2
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - "typescript@7.0.2"
