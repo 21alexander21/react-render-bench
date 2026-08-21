@@ -28,6 +28,8 @@ corepack pnpm check
 
 Read `METHODOLOGY.md` before changing measurement behavior. Read `CONTRIBUTING.md` before opening a pull request.
 
+See `ROADMAP.md` for planned milestones and `docs/plans/README.md` for task-planning conventions.
+
 ## Status
 
 The initial target is one deployed plain-versus-memo comparison with p50, p95, and a measured noise floor.
