@@ -1,0 +1,26 @@
+:root {
+  color: rgb(23 32 51);
+  background: rgb(245 247 251);
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  display: grid;
+  min-block-size: 100vh;
+  margin: 0;
+  place-items: center;
+}
+
+main {
+  max-inline-size: 38rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.eyebrow {
+  color: rgb(82 96 122);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

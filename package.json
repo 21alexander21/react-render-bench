@@ -9,7 +9,9 @@
     "pnpm": ">=11.22.0"
   },
   "scripts": {
+    "build": "corepack pnpm --recursive --filter './apps/*' build",
     "check": "biome check . && tsc --project tsconfig.json",
+    "dev": "corepack pnpm --parallel --filter './apps/*' dev",
     "format": "biome format --write .",
     "format:check": "biome format .",
     "lint": "biome lint .",
