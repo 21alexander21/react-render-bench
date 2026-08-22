@@ -7,9 +7,14 @@
     ".": "./src/index.ts"
   },
   "scripts": {
+    "test": "vitest run",
     "typecheck": "tsc --project tsconfig.json"
   },
+  "dependencies": {
+    "valibot": "catalog:"
+  },
   "devDependencies": {
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   }
 }

@@ -10,12 +10,13 @@
   },
   "scripts": {
     "build": "corepack pnpm --recursive --filter './apps/*' build",
-    "check": "biome check . && tsc --project tsconfig.json",
+    "check": "biome check . && corepack pnpm typecheck",
     "dev": "corepack pnpm --parallel --filter './apps/*' dev",
     "format": "biome format --write .",
     "format:check": "biome format .",
     "lint": "biome lint .",
-    "typecheck": "tsc --project tsconfig.json"
+    "test": "corepack pnpm --recursive test",
+    "typecheck": "tsc --project tsconfig.json && corepack pnpm --recursive --filter './packages/*' typecheck"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.9",
