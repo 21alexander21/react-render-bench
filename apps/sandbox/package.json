@@ -6,9 +6,11 @@
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev",
+    "test": "vitest run",
     "typecheck": "tsc --project tsconfig.json"
   },
   "dependencies": {
+    "@react-render-bench/protocol": "workspace:*",
     "react": "catalog:",
     "react-dom": "catalog:"
   },
@@ -17,6 +19,7 @@
     "@rsbuild/plugin-react": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   }
 }

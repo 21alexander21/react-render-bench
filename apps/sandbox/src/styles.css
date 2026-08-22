@@ -24,3 +24,9 @@ main {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+.metadata {
+  color: rgb(89 101 76);
+  font-family: ui-monospace, monospace;
+  font-size: 0.875rem;
+}
