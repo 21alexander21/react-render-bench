@@ -2,7 +2,7 @@
 
 React Render Bench is an experimental web application for controlled React rendering micro-benchmarks. It compares variants such as plain components, `React.memo`, and React Compiler builds while reporting distributions and an explicit noise floor.
 
-The project is in its foundation stage. The workspace and methodology are present, but the benchmark runner and user interface are not implemented yet.
+The project is in its foundation stage. The shell and sandbox applications are runnable, but the benchmark runner and user interface are not implemented yet.
 
 ## Why
 
@@ -24,6 +24,22 @@ Micro-benchmarks are easy to distort. This project treats trust in the result as
 ```bash
 corepack pnpm install --frozen-lockfile
 corepack pnpm check
+```
+
+## Local development
+
+Start both applications:
+
+```bash
+corepack pnpm dev
+```
+
+The shell runs at `http://localhost:3000` and the sandbox runs at `http://localhost:3001`.
+
+Build both production bundles:
+
+```bash
+corepack pnpm build
 ```
 
 Read `METHODOLOGY.md` before changing measurement behavior. Read `CONTRIBUTING.md` before opening a pull request.

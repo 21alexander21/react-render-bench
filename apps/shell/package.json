@@ -4,9 +4,19 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild dev",
     "typecheck": "tsc --project tsconfig.json"
   },
+  "dependencies": {
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
   "devDependencies": {
+    "@rsbuild/core": "catalog:",
+    "@rsbuild/plugin-react": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
     "typescript": "catalog:"
   }
 }

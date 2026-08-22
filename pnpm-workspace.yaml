@@ -3,6 +3,12 @@ packages:
   - packages/*
 
 catalog:
+  "@rsbuild/core": 2.1.13
+  "@rsbuild/plugin-react": 2.1.0
+  "@types/react": 19.2.18
+  "@types/react-dom": 19.2.4
+  react: 19.2.8
+  react-dom: 19.2.8
   typescript: 7.0.2
 
 minimumReleaseAge: 1440
