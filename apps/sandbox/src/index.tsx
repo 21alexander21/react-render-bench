@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 
 import { getVerifiedSandboxMetadata } from "./profiling.tsx";
+import { announceSandboxReady, getParentOrigin } from "./readiness.ts";
 import "./styles.css";
 
 const rootElement = document.getElementById("root");
@@ -27,3 +28,5 @@ createRoot(rootElement).render(
     </p>
   </main>,
 );
+
+announceSandboxReady(window.parent, getParentOrigin(window.location.href), metadata);
