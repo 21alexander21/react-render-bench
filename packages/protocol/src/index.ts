@@ -18,6 +18,7 @@ export {
   type SandboxMessage,
   type SandboxMetadata,
   type ShellMessage,
+  type SubjectId,
   sandboxMessageSchema,
   shellMessageSchema,
   type ValidationIssue,
