@@ -139,6 +139,7 @@ export const sandboxMessageSchema = variant("type", [
 export type BenchmarkVariant = InferOutput<typeof runConfigSchema>["variant"];
 export type BuildVariant = InferOutput<typeof sandboxMetadataSchema>["buildVariant"];
 export type RunConfig = InferOutput<typeof runConfigSchema>;
+export type SubjectId = RunConfig["subjectId"];
 export type SandboxMetadata = InferOutput<typeof sandboxMetadataSchema>;
 export type RawSamples = InferOutput<typeof rawSamplesSchema>;
 export type RawResult = InferOutput<typeof rawResultSchema>;
