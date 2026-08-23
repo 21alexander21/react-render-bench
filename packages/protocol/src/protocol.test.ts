@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  createReadyMessage,
   MAX_COMMIT_COUNT,
   PROTOCOL_VERSION,
   validateRawResult,
@@ -37,6 +38,24 @@ const validResult = {
     longTaskTotalDurationMs: 0,
   },
 };
+
+describe("message creation", () => {
+  it("creates a valid ready message with the current protocol version", () => {
+    const metadata = {
+      buildVariant: "compiler-off",
+      profilingBuild: true,
+      reactVersion: "19.2.8",
+    } as const;
+    const message = createReadyMessage(metadata);
+
+    expect(message).toEqual({
+      metadata,
+      protocolVersion: PROTOCOL_VERSION,
+      type: "ready",
+    });
+    expect(validateSandboxMessage(message).success).toBe(true);
+  });
+});
 
 describe("shell message validation", () => {
   it("accepts a valid run message", () => {

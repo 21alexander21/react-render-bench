@@ -160,6 +160,14 @@ export type ValidationResult<T> =
   | { readonly success: true; readonly value: T }
   | { readonly issues: readonly ValidationIssue[]; readonly success: false };
 
+export function createReadyMessage(metadata: SandboxMetadata): ReadyMessage {
+  return {
+    metadata,
+    protocolVersion: PROTOCOL_VERSION,
+    type: "ready",
+  };
+}
+
 function validate<Schema extends BaseSchema<unknown, unknown, BaseIssue<unknown>>>(
   schema: Schema,
   input: unknown,

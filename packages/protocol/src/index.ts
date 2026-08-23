@@ -3,6 +3,7 @@ export {
   type BenchmarkVariant,
   BUILD_VARIANTS,
   type BuildVariant,
+  createReadyMessage,
   MAX_COMMIT_COUNT,
   PROTOCOL_VERSION,
   type ProtocolError,
