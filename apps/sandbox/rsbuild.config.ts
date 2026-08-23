@@ -6,6 +6,11 @@ export default defineConfig({
     title: "React Render Bench Sandbox",
   },
   plugins: [pluginReact()],
+  resolve: {
+    alias: {
+      "react-dom/client$": "react-dom/profiling",
+    },
+  },
   server: {
     port: 3001,
     strictPort: true,
