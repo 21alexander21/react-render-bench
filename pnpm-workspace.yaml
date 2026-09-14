@@ -3,14 +3,14 @@ packages:
   - packages/*
 
 catalog:
-  "@rsbuild/core": 2.1.13
+  "@rsbuild/core": 2.2.5
   "@rsbuild/plugin-react": 2.1.0
-  "@types/react": 19.2.18
-  "@types/react-dom": 19.2.4
-  react: 19.2.8
-  react-dom: 19.2.8
+  "@types/react": 19.3.0
+  "@types/react-dom": 19.3.0
+  react: 19.3.0
+  react-dom: 19.3.0
   typescript: 7.0.2
-  valibot: 1.4.2
+  valibot: 1.5.0
   vitest: 4.1.11
 
 minimumReleaseAge: 1440
